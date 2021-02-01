@@ -44,15 +44,13 @@ img.emoji {
 <link rel="alternate" type="text/xml+oembed" href="https://stretton-pc.gov.uk/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fstretton-pc.gov.uk%2Fplanning-applications%2F&#038;format=xml" />
 <meta name="tec-api-version" content="v1"><meta name="tec-api-origin" content="https://stretton-pc.gov.uk"><link rel="https://theeventscalendar.com/" href="https://stretton-pc.gov.uk/wp-json/tribe/events/v1/" /><style>.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><style id="kirki-inline-styles">.site-main h1{font-size:26px;}.site-main h2{font-size:18px;}.site-main h3{font-size:14px;}.site-main h4{font-size:20px;}body h2.archive-title{font-size:22px;}.styles-ph .page--title{font-size:36px;}body{font-size:16px;}.top-bar{background-color:#0a0a0a;color:#FFFFFF;}.bg-primary{background-color:#397326!important;}.text-primary{color:#397326!important;}.badge-primary, .block-col .block-content, .hcbox .hctitle, .banner-content, .gallery--wrapper, .page-item.active .page-link, .well .widget-title, .section--galleries .gallery-title, .dropdown-item.active, .dropdown-item:active, .list-group-item.active{background-color:#397326;}.hcbox, .page-item.active .page-link{border-color:#397326;}.hcbox .hcitem svg{fill:#397326;}.btn-light{color:#397326;}.tribe-common a{color:#397326!important;}.btn-primary, btn-primary:hover, .btn-primary:active, .custom-control-input:checked~.custom-control-label::before{background-color:#397326!important;}.btn-primary, btn-primary:hover, .btn-primary:active, .primary-navigation, .custom-control-input:checked~.custom-control-label::before{border-color:#397326!important;}.tribe-common .tribe-common-c-btn, .tribe-common a.tribe-common-c-btn{background-color:#397326!important;}.animated-icon2 span{background:#397326;}body, a, .styles-ph .page--title, .listings .card-title, .tribe-common .tribe-common-b2{color:#455c31;}#primary a:not(.btn):not(.nav-link){color:#478731;}.doc-block .btn-download, .document-heading>h2>a{color:#478731!important;}.doc-block .btn-download{border-color:#478731;}.doc-block .btn-download:hover{border-color:#5a944c!important;background-color:#5a944c!important;}</style>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAb-8wTjVukyXB8SW5aOHHmwLAE8wNNmP4&callback=initMap&libraries=&v=weekly"
-      defer
-    ></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAb-8wTjVukyXB8SW5aOHHmwLAE8wNNmP4&callback=initMap&libraries=&v=weekly" defer></script>
     <style type="text/css">
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
       #map {
         height: 900px;
+	width: 900px;
       }
     </style>
     <script>
@@ -119,18 +117,16 @@ img.emoji {
 
 		var markers = locations.map(function(locaction, i)){
 			return new google.maps.Marker({
-				map,
-				animation: google.maps.Animation.DROP,
-				icon: image,
 				position: location,
 				label: labels[i % labels.length],
-				title: titles[i % titles.length],
-				url: links[i % links.length]
+			})
+		}
 			})
 		}
 });
 	}
-    </script></head>
+    </script>
+</head>
 
 <body class="page-template-default page page-id-565 wp-custom-logo tribe-no-js page-template-home-stretton-public_html-wp-content-themes-netwise-v2-page-php">
 <div id="page" class="site">
@@ -267,16 +263,6 @@ img.emoji {
 <p>The following planning applications for Stretton are currently in the consultation phase:</p>
 
 <div id="map"></div>
-
-
-</div></span><img src="https://stretton-pc.gov.uk/wp-content/uploads/2019/04/Screen-Shot-2019-04-30-at-15.40.25.png" class="popover-image" alt="Screen Shot 2019 04 30 At 15.40.25"></div></div>
-<p>&nbsp;</p>
-</div>
-	</div><!-- .entry-content -->
-
-	</article><!-- #post-565 -->
-		</div>
-	</main><!-- #main -->
 
 
 	<footer id="colophon" class="site-footer">
