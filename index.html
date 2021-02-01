@@ -66,109 +66,89 @@ img.emoji {
                     zoom: 15,
             });
         
-            const iconBase =
-          "https://developers.google.com/maps/documentation/javascript/examples/full/images/";
-        const icons = {
-          info: {
-            icon: iconBase + "info-i_maps.png",
-          },
-        };
+            
         const features = [
           {
             position: new google.maps.LatLng(52.83581894860428, -1.6353200638068786),
             type: "info",
-            label: "P/2018/00823",
             title: "P/2018/00823 Outline application for a mixed use development comprising up to 385 dwellings provision of 2.4ha of land for a new primary school and associated infrastructure including details of access with all other matters reserved Land off Craythorne Road",
             url: "http://www.eaststaffsbc.gov.uk/Northgate/PlanningExplorer/Generic/StdDetails.aspx?PT=Planning%20Applications%20On-Line&TYPE=PL/PlanningPK.xml&PARAM0=632208&XSLT=/Northgate/PlanningExplorer/SiteFiles/Skins/EastStaffs/xslt/PL/PLDetails.xslt&FT=Planning%20Application%20Details&PUBLIC=Y&XMLSIDE=/Northgate/PlanningExplorer/SiteFiles/Skins/EastStaffs/Menus/PL.xml&DAURI=PLANNING"
           },
           {
             position: new google.maps.LatLng(52.82960189555636, -1.6252673567989029),
             type: "info",
-            label: "P/2020/00662",
             title: "P/2020/00662 Erection of  a detached dwelling including new parking area for 21 Beech Lane and alterations to existing access and 2.4m high fence to part of rear and side boundary Land at rear of 21 Beech Lane",
             url: "http://www.eaststaffsbc.gov.uk/MVM/Online/dms/DocumentViewer.aspx?PK=635178&SearchType=Planning%20Application"
           },
           {
             position: new google.maps.LatLng(52.835132565365974, -1.6125556933696865),
             type: "info",
-            label: "P/2020/00683",
             title: "P/2020/00683 Change of use from existing yard/parking area for log sales to car sales forecourt Rustic Centre, Derby Road",
             url: "http://www.eaststaffsbc.gov.uk/MVM/Online/dms/DocumentViewer.aspx?PK=635198&SearchType=Planning%20Application"
           },
           {
             position: new google.maps.LatLng(52.83412826628768, -1.6257418344075019),
             type: "info",
-            label: "P/2020/01220",
             title: "P/2020/01220 Pruning of 1 Horse Chestnut tree to give upto 2m clearance between the building and tree, and pruning of branches by upto 50mm of 1 Yew Tree to improve the overall form of the tree and allow access (T52 and T49 of TPO37) St Mary's Parish Church",
             url: "http://www.eaststaffsbc.gov.uk/MVM/Online/dms/DocumentViewer.aspx?PK=635731&SearchType=Planning%20Application"
           },
           {
             position: new google.maps.LatLng(52.83087463868491, -1.6309666586496938),
             type: "info",
-            label: "P/2020/01267",
             title: "P/2020/01267 Erection of a two storey side extension 41 Caernarvon Close APPROVED 19 JANUARY 2021",
             url: "http://www.eaststaffsbc.gov.uk/MVM/Online/dms/DocumentViewer.aspx?PK=635778&SearchType=Planning%20Application"
           },
           {
             position: new google.maps.LatLng(52.83873195024095, -1.6139443586494888),
             type: "info",
-            label: "P/2020/01290",
             title: "P/2020/01290 Erection of a two storey side extension, single storey side extension to form orangery with first floor roof terrace, front porch and canopy, new entrance gate and boundary wall (Revised Scheme) Millbank House, 39 Claymills Road",
             url: "http://www.eaststaffsbc.gov.uk/MVM/Online/dms/DocumentViewer.aspx?PK=635801&SearchType=Planning%20Application"
           },
           {
             position: new google.maps.LatLng(52.828339788520665, -1.6183543162987895),
             type: "info",
-            label: "P/2020/01351",
             title: "P/2020/01351 Display of 3 non-illuminated 3m x 3m hoardings Arnold Clark Motorstore",
             url: "http://www.eaststaffsbc.gov.uk/MVM/Online/dms/DocumentViewer.aspx?PK=635862&SearchType=Planning%20Application"
           },
           {
             position: new google.maps.LatLng(52.829324501416984, -1.6337950163213533),
             type: "info",
-            label: "P/2020/01383",
             title: "P/2020/01383 Erection of a two storey side extension and single storey rear extension 27 Glamis Close",
             url: "http://www.eaststaffsbc.gov.uk/MVM/Online/dms/DocumentViewer.aspx?PK=635894&SearchType=Planning%20Application"
           },
           {
             position: new google.maps.LatLng(52.82172144752955, -1.6285191567990533),
             type: "info",
-            label: "P/2020/01357",
             title: "P/2020/01357 Erection of single storey rear extension and new boundary wall and rolling gate to front Maple Tree House, 1 Princess Way",
             url: "http://www.eaststaffsbc.gov.uk/MVM/Online/dms/DocumentViewer.aspx?PK=635868&SearchType=Planning%20Application"
           },
           {
             position: new google.maps.LatLng(52.832730597084414, -1.622445958658393),
             type: "info",
-            label: "P/2020/01172",
             title: "P/2020/01172 Erection of a two storey rear extension 25 Hillfield Lane",
             url: "http://www.eaststaffsbc.gov.uk/MVM/Online/dms/DocumentViewer.aspx?PK=635683&SearchType=Planning%20Application"
           },
           {
             position: new google.maps.LatLng(52.83620711727286, -1.6264196144704341),
             type: "info",
-            label: "P/2020/01441",
             title: "P/2020/01441 Erection of a single storey side extension 43 Lancelot Drive",
             url: "http://www.eaststaffsbc.gov.uk/MVM/Online/dms/DocumentViewer.aspx?PK=635952&SearchType=Planning%20Application"
           },
           {
             position: new google.maps.LatLng(52.826383972348786, -1.6233718009781266),
             type: "info",
-            label: "P/2020/01459",
             title: "P/2020/01459 Erection of a turnstile enclosure Pirelli Tyres Ltd",
             url: "http://www.eaststaffsbc.gov.uk/MVM/Online/dms/DocumentViewer.aspx?PK=635969&SearchType=Planning%20Application"
           },
           {
             position: new google.maps.LatLng(52.834729311133074, -1.6434801089180684),
             type: "info",
-            label: "P/2020/01506",
             title: "P/2020/01506 Erection of a first floor side extension 10 Severn Close",
             url: "http://www.eaststaffsbc.gov.uk/MVM/Online/dms/DocumentViewer.aspx?PK=636015&SearchType=Planning%20Application"
           },
           {
             position: new google.maps.LatLng(52.83756836236973, -1.6227402332003211),
             type: "info",
-            label: "P/2021/00040",
             title: "P/2021/00040 Erection of a single storey rear extension 39 Hall Green Avenue",
             url: "http://www.eaststaffsbc.gov.uk/MVM/Online/dms/DocumentViewer.aspx?PK=636064&SearchType=Planning%20Application"
           },       
@@ -178,7 +158,6 @@ img.emoji {
         for (let i = 0; i < features.length; i++) {
           const marker = new google.maps.Marker({
             position: features[i].position,
-            icon: icons[features[i].type].icon,
             label: features[i].label,
             title: features[i].title,
             url: features[i].url,
